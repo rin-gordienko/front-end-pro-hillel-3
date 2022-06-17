@@ -47,15 +47,12 @@ let person = {
     surname: "Stuart",
     age: "30",
 }
-
 let test = prompt("Введите интересующее поле");
 if(test in person) {
     alert(`${test} ${person[test]}`);
 } else {
     person[test] = prompt(`Введите значение для  ${test}`);
 }
-
-
 
 
 // Сгенерируйте объект, описывающий модель телефона, заполнив все свойства значениями, прочитанными из prompt (например: brand, model, resolution, color...), 
@@ -68,7 +65,6 @@ let phoneModel = {
   resolution: prompt("Укажите разрешение телефона"),
   color: prompt("Укажите цвет телефона"),
 };
-
 person.phoneModel = phoneModel;
 
 
